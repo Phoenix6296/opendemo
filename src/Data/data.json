@@ -28,6 +28,7 @@
         "title1": "Ready To Get",
         "title2": "Started?",
         "videoURL2": "https://storage.googleapis.com/openinapp-prod-assets/BG%20videos%20Webm/Ready%20to%20get%20onboard.webm",
-        "isButton": true
+        "isButton": true,
+        "isFooter": false
     }
 ]

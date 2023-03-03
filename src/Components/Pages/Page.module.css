@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@font-face {
+    font-family: madeGentle;
+    src: url("../../Data/madeGentle.otf") format("opentype");
+}
 
 .center {
     display: flex;
@@ -19,7 +22,7 @@
 }
 
 .text>h1 {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'madeGentle';
     margin: 0 1rem;
     color: #2A456B;
     font-size: 5rem;
@@ -31,7 +34,7 @@
 }
 
 .text_button {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'madeGentle';
     font-weight: 100;
     padding: 1.5rem 2rem;
     border: none;
@@ -46,6 +49,17 @@
 .text_button:hover {
     cursor: pointer;
     background: #0f64e4;
+}
+
+.footer {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    flex-direction: column;
+}
+
+.footer>p:nth-child(2) {
+    font-size: 0.8rem;
+    color: #0f64e4;
 }
 
 @media screen and (max-width: 1023px) {

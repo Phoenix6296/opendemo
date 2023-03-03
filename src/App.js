@@ -28,7 +28,7 @@ const App = () => {
       <Navbar />
       <div className={styles.page_container}>
         {data.map((item) => {
-          return <Page key={Math.random()} title1={item.title1} title2={item.title2} videoURL1={item.videoURL1} videoURL2={item.videoURL2} isButton={item.isButton} />
+          return <Page key={Math.random()} title1={item.title1} title2={item.title2} videoURL1={item.videoURL1} videoURL2={item.videoURL2} isButton={item.isButton} isFooter={item.isFooter} />
         })}
       </div>
     </div>
