@@ -8,15 +8,6 @@
   background: #DFEDF8;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-weight: 400;
-  font-family: sans-serif;
-}
-
-
 .page_container {
   background-color: #DFEDF8;
   height: 600vh;
@@ -70,7 +61,16 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .container{
+  .container {
     padding: 0;
+  }
+
+  .section {
+    scroll-snap-align: start;
+  }
+
+  .page_container {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
   }
 }
