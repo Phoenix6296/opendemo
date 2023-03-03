@@ -19,7 +19,7 @@ const Sixth = () => {
             <h1>Started?</h1>
             <button className={classes.text_button}>Lets Go!</button>
           </div>
-          <video id="video" autoPlay loop src={videoURL} className={classes.video}></video>
+          <video id="video" autoPlay loop muted src={videoURL} className={classes.video}></video>
         </div>
       </div>
     </section>

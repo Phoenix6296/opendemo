@@ -14,7 +14,7 @@ const First = () => {
     <section className={styles.section}>
       <div className={styles.sticky}>
         <div className={`${classes.firstPage} ${classes.center} ${styles.container}`}>
-          <video id="video" autoPlay loop src={videoURL} className={classes.video}></video>
+          <video id="video" autoPlay loop muted src={videoURL} className={classes.video}></video>
           <div className={classes.text}>
             <h1>Welcome To</h1>
             <h1>OpeninApp</h1>
