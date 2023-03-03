@@ -1,3 +1,37 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .app {
   background: #DFEDF8;
+}
+
+.pages_container {
+  padding: 1rem;
+  /* padding-top: 6rem; */
+  height: 550vh;
+  flex-direction: column;
+}
+
+.pages_container>div:nth-child(2) {
+  top: -100vh;
+}
+
+.pages_container>div:nth-child(3) {
+  top: -200vh;
+}
+
+.pages_container>div:nth-child(4) {
+  top: -300vh;
+}
+
+.pages_container>div:nth-child(5) {
+  top: -400vh;
+}
+
+.pages_container>div:nth-child(6) {
+  top: -500vh;
+  height: 80vh;
 }
