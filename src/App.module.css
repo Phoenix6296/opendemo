@@ -70,6 +70,7 @@
   }
 
   .page_container {
+    height: 500vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
   }
