@@ -8,6 +8,7 @@
     justify-content: space-between;
     border: 1px solid black;
     padding: 1rem 0;
+    background-color: #DFEDF8;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -48,4 +49,22 @@
     padding: 1rem 2rem;
     gap: 1rem;
     border-radius: 25rem;
+}
+
+.plus {
+    border: 1px solid #126DF6;
+    padding: 1rem;
+    border-radius: 25rem;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar>img:nth-child(1) {
+        height: 1.5rem;
+    }
+
+    .nav_right>div:nth-child(2) {
+        padding: 1rem 1.5rem;
+        color: white;
+        margin-right: 1rem;
+    }
 }

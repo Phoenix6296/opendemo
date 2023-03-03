@@ -4,10 +4,13 @@ const Navbar = () => {
     <div className={`${styles.navbar} ${styles.center}`}>
       <img src="https://openinapp.com/logo.svg" alt="" />
       <div className={`${styles.nav_right} ${styles.center}`}>
-        <div className={`${styles.center}`}>
-          <img src="https://openinapp.com/plus-create.svg" alt="" />
-          <p>Create Smartlink</p>
-        </div>
+        {window.innerWidth > 1023 ?
+          <div className={`${styles.center}`}>
+            <img src="https://openinapp.com/plus-create.svg" alt="" />
+            <p>Create Smartlink</p>
+          </div> :
+          <img src="https://openinapp.com/plus-create.svg" alt="" className={styles.plus} />
+        }
         <div>Login</div>
       </div>
     </div>

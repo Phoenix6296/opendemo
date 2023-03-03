@@ -63,8 +63,14 @@
 .container {
   height: 100%;
   width: 100%;
-  background-color: aquamarine;
+  background-color: #EAF4FC;
   padding: 1rem;
   border-radius: 10px;
   overflow: scroll;
+}
+
+@media screen and (max-width: 1023px) {
+  .container{
+    padding: 0;
+  }
 }
