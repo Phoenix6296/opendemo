@@ -1,13 +1,8 @@
 import React, { useEffect } from 'react';
 import styles from './App.module.css';
 import Navbar from './Components/Navbar/Navbar';
-import FirstPage from './Components/Pages/First';
-import SecondPage from './Components/Pages/Second';
-import ThirdPage from './Components/Pages/Third';
-import FourthPage from './Components/Pages/Fourth';
-import FifthPage from './Components/Pages/Fifth';
-import SixthPage from './Components/Pages/Sixth';
-
+import Page from './Components/Pages/Page';
+import data from './Data/data.json'
 
 const App = () => {
   useEffect(() => {
@@ -32,12 +27,9 @@ const App = () => {
     <div className={styles.app}>
       <Navbar />
       <div className={styles.page_container}>
-        <FirstPage />
-        <SecondPage />
-        <ThirdPage />
-        <FourthPage />
-        <FifthPage />
-        <SixthPage />
+        {data.map((item) => {
+          return <Page key={Math.random()} title1={item.title1} title2={item.title2} videoURL1={item.videoURL1} videoURL2={item.videoURL2} isButton={item.isButton} />
+        })}
       </div>
     </div>
   );
