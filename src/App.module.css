@@ -11,12 +11,16 @@
 .page_container {
   background-color: #DFEDF8;
   height: 600vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .section {
   position: relative;
   height: 200vh;
   width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .section:nth-child(2) {
@@ -65,15 +69,8 @@
     padding: 0;
   }
 
-  .section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
-
   .page_container {
     height: 500vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
   }
 
   .sticky {
