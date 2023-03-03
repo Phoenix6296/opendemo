@@ -10,7 +10,7 @@
 
 .page_container {
   background-color: #DFEDF8;
-  height: 600vh;
+  height: 500vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -67,10 +67,6 @@
 @media screen and (max-width: 1023px) {
   .container {
     padding: 0;
-  }
-
-  .page_container {
-    height: 500vh;
   }
 
   .sticky {
